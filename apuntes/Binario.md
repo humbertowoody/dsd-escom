@@ -102,5 +102,3 @@ hexadecimal.
 |x|11FFFFFFF
 |x|
 
-
-

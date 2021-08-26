@@ -15,6 +15,8 @@ Una memoria RAM 6x6:
 |4|
 |5|
 
+Esta memoria tiene 6x6=36 flip-flops.
+
 Los flip flops almacenan un dato `Q`, pero siempre tienen dos salidas: `Q` y `!Q`.
 
 Existen cuatro tipos de flip-flops:
@@ -28,6 +30,10 @@ Existen cuatro tipos de flip-flops:
 > refiere al tiempo de respuesta para activar/desactivar el flip-flop cuando
 > no utilizamos una señal de reloj (un oscilador).
 
+> "Activo en alto" quiere decir que actúa en 1's
+
+> "Activo en bajo" quiere decir que actúa en 0's
+
 ## SR
 
 Este flip flop almacena un dato que podremos modificar mediante los valores
@@ -39,6 +45,18 @@ que proporcionamos para `S` (set) y para `R` (reset).
 |01|1/0|0|
 |10|1/0|1|
 |11|1/0|Prohibido|
+
+### Ejemplo
+
+La siguiente tabla representa una línea de tiempo con los valores esperados
+ante una serie de instrucciones.
+
+|Tiempo|S|R|Q(t)|Q(t+1|
+|---|---|---|---|---|
+|0|
+|1|
+|2|
+|3|
 
 ## JK
 
@@ -76,6 +94,9 @@ entrada es lo que tendremos a la salida.
 |1|1/0|1|
 
 ## T
+
+Le llaman `T` por _Toggle_. Esto es porque, básicamente, invierte el valor
+presente en la memoria.
 
 |T|Q(t)|Q(t+1)|
 |---|---|---|
