@@ -39,12 +39,24 @@ Existen cuatro tipos de flip-flops:
 Este flip flop almacena un dato que podremos modificar mediante los valores
 que proporcionamos para `S` (set) y para `R` (reset).
 
-|SR|Q(t)|Q(t+1)|
-|:---:|:---:|:---:|
-|00|1/0|Q(t) Memoria|
-|01|1/0|0|
-|10|1/0|1|
-|11|1/0|Prohibido|
+### Latch Activo en Alto
+
+|S|R|Q(t)|Q(t+1)|
+|:---:|:---:|:---:|:---:|
+|0|0|1/0|Q(t) Memoria|
+|0|1|1/0|0|
+|1|0|1/0|1|
+|1|1|1/0|Prohibido|
+
+### Latch Activo en Bajo
+
+
+|S|R|Q(t)|Q(t+1)|
+|---|---|---|---|
+|1|1|1/0|Q(t) Memoria|
+|1|0|1/0|0|
+|0|1|1/0|1|
+|0|0|1/0|Prohibido|
 
 ### Ejemplo
 
