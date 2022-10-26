@@ -1,0 +1,7 @@
+v 4
+file . "registro.vhdl" "e365f1e886468b13ecb9c97889f9bcc3cd6a74d0" "20211208012741.198":
+  entity tri_state_buffer_top at 1( 0) + 0 on 13;
+  architecture behavioral of tri_state_buffer_top at 14( 475) + 0 on 14;
+file . "ls373.vhdl" "0f135473d6bb43313910334a6e3f2f9701a2c1c9" "20211208012741.197":
+  entity ls373 at 1( 0) + 0 on 11;
+  architecture als373 of ls373 at 13( 221) + 0 on 12;

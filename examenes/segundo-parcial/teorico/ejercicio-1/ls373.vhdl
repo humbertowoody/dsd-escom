@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY ls373 IS
+  PORT (
+    OE, LE : IN STD_LOGIC;
+    D : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    Q : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+  );
+END ls373;
+
+ARCHITECTURE als373 OF ls373 IS
+  SIGNAL aux : STD_LOGIC_VECTOR(7 DOWNTO 0);
+BEGIN
+  PROCESS (OE, LE)
+  BEGIN
+    IF (rising_edge(LE)) THEN
+      aux <= D;
+    END IF;
+
+    IF (OE = '0') THEN
+      Q <= aux;
+    ELSE
+      Q <= (OTHERS => '0');
+    END IF;
+  END PROCESS;
+END ARCHITECTURE als373;
